@@ -34,20 +34,6 @@ export const UserProfileDrawer = () => {
       })
       .catch(error => {
         console.error("Error loading user persona:", error);
-        // Fallback to local file if API fails
-        const jsonPath = "/src/data/userpersona.json";
-        fetch(jsonPath)
-          .then(response => response.json())
-          .then(data => {
-            if (JSON.stringify(data) !== JSON.stringify(userPersona)) {
-              setUserPersona(data);
-              if (!isEditing) {
-                setEditablePersona(JSON.parse(JSON.stringify(data)));
-              }
-              setLastUpdated(new Date());
-            }
-          })
-          .catch(err => console.error("Error loading local user persona:", err));
       });
   };
 
