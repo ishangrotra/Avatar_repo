@@ -7,7 +7,7 @@ export const VoiceRecorder = ({ disabled }) => {
   const mediaRecorder = useRef(null);
   const audioChunks = useRef([]);
   const timerInterval = useRef(null);
-  const backendUrl = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const backendUrl = import.meta.env.VITE_API_URL || "http://54.225.14.110";
 
   const { addMessage, setLoading } = useChat(); // Use chat hook
 
