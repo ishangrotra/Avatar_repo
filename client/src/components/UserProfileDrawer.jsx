@@ -10,7 +10,7 @@ export const UserProfileDrawer = () => {
   const [saveStatus, setSaveStatus] = useState(null);
   
   // API endpoint - adjust if your backend runs on a different port/host
-  const API_ENDPOINT = "http://localhost:8000";
+  const API_ENDPOINT = "http://54.225.14.110";
 
   const fetchUserPersona = () => {
     // Use the API endpoint to fetch the user persona
