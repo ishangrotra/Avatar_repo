@@ -1,5 +1,5 @@
 import React from 'react';
-const API_ENDPOINT = "http://54.225.14.110";
+const API_ENDPOINT = "http://localhost:8000";
 export const EndChatButton = ({ jsonFilePath, onEndChat }) => {
   const handleEndChat = async () => {
     try {
